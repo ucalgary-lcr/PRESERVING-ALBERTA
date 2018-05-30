@@ -1,0 +1,402 @@
+/*
+Theme Name: UCalgary Wordpress Theme
+Theme URI: https://www.ucalgary.ca
+Author: Ucalgary
+Author URI: https://www.ucalgary.ca
+Description: Ucalgary Theme on Boostrap Framework
+Version: 1.0
+Text Domain: ucalgary
+*/
+.gallery-images{display:inline-block;height:250px;width:400px; object-fit: cover;object-position: center;}
+.hero-content-open{background-color: rgba(109,100,93,.8) !important;max-width: 600px !important;width: 100% !important;z-index: 3 !important;top: 155px !important;position: absolute !important;display: inline-block !important;height:auto !important;left:-125px !important;padding: 15px !important;border-radius: 10px !important;margin: 0 auto !important;}
+.hero-content-closed{background-color: rgba(109,100,93,.8);max-width: 550px;width: 5%;z-index: 3;top: 155px;position: absolute;display: inline-block;height:auto;left:-125px;padding: 15px;border-radius: 10px;margin: 0 auto;}
+.content-btn-open{transform: rotate(180deg);}
+.vertical-title{writing-mode: tb-rl; width: auto; height:auto;}
+.location-content{color:#fff;}
+.location-content h1{font-size: 20px;}
+.location-content h3{font-size: 16px;}
+#green-threat-arrow{z-index:5; margin: auto;position: absolute;left: 81px;top: -45px;}
+#orange-threat-arrow{z-index:5; margin: auto;position: absolute;left: 275px;top: -45px;}
+#red-threat-arrow{z-index:5; margin: auto;position: absolute;left: 460px;top: -45px;}
+.ct-scanloction-image{width:100%; margin: 25px 0 25px 0 !important;}
+.ct-image-styles{margin-bottom:25px !important;}
+.ct-location-images{width:100%; height:300px;}
+.ct-img-gal{margin: 0 0 15px 0;}
+.news-post-feed{background-color: rgba(242, 249, 254, 0.4);padding:0;min-height:374px;height:100%;/*color:#529df4;*/margin-bottom:50px;}
+.no-padding{padding:0;}
+.news-excerpt{top: 10px;}
+.news-excerpt h2 a{/*color:rgba(75,153,244, 1);*/}
+.news-excerpt h2 a:hover{/*color:rgba(75,153,244, 0.6);*/}
+.news-excerpt a{/*color:#4b99f4;*/}
+.news-excerpt a:hover{/*color:rgba(75,153,244, 0.6);*/}
+.news-post-feed .no-padding img{width: 100%;height:373px;}
+.news-photo{object-fit: cover; object-position: center;}
+.home-page-image-feed-one{height:600px;width: 100%;}
+.home-page-image-feed-two{height:300px;width: 100%;}
+.home-page-image-feed-general{height:300px;width: 100%;}
+.headerspace{margin-top:175px;}
+.profile-img-size {width: 250px;height: 250px;object-fit: cover;}
+.navbar-collapse {padding-right: 0;padding-left: 0;}
+.navbar-collapse.collapse {display: block !important;height: auto !important;overflow: visible !important;margin-left: 0px;text-align: left;padding: 0;}
+
+
+/*******
+Theme Specific styles
+****/
+html,
+body {
+    overflow-x: hidden;
+}
+
+/*******
+Special Nav styles
+****/
+header #navigation .row.uc-logo-container .container .uc-logo {
+    position: inherit;
+    z-index: 2;
+    top: -5px;
+    left: 60px;
+    right: 60px;
+    transition: right 500ms;
+}
+
+header #navigation.group .row.uc-logo-container .container .uc-logo,
+header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo {
+    top: 16px;
+    height: 68px;
+    overflow: hidden;
+}
+
+header #navigation .uc-nav .uc-menuwrapper ul li.active > a {
+    border-bottom-color: rgb(252, 163, 17);
+    background-color: transparent;
+    border-top: none;
+}
+
+header #navigation .uc-nav .uc-menuwrapper ul li:hover > a,
+header #navigation .uc-nav .uc-menuwrapper ul li:active > a,
+header #navigation .uc-nav .uc-menuwrapper ul li:focus > a,
+header #navigation .uc-nav .uc-menuwrapper ul li > a:focus {
+    border-bottom-color: rgb(252, 163, 17);
+    background-color: transparent;
+    border-top: none;
+}
+
+header #navigation .uc-nav .uc-menuwrapper ul li {
+    margin: 0 145px 0 0;
+    position: relative;
+}
+
+header #navigation .uc-nav .uc-menuwrapper ul li > a {
+    line-height: 1;
+    padding: 8px 10px 12px;
+    font-size: 14px;
+    border-width: 4px 0 4px 0;
+}
+
+header #navigation .uc-nav .uc-menuwrapper ul li > a,
+header #navigation .uc-nav .uc-menuwrapper ul li > span {
+    transition: none;
+}
+
+.map-title-margin{margin-top:175px !important;}
+
+/*****
+Responsive Styles
+*****/
+@media (min-width:280px) and (max-width:1199px) {
+.sites-location-content-mobile-brick {margin-bottom:25px !important;}
+.iframe-mobile{width:100%; height:500px;}
+}
+@media (min-width:1200px) and (max-width:1412px) {
+  .location-content-holder{left:5px;}
+}
+
+@media screen and ( max-height:3840px ) {
+  .map-responsive{height:2200px !important;}
+}
+@media (min-width:2401px) and (max-width:3000px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0px 202px;position: relative;top: 7px;left: -200px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 8px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span {margin-top: -1px;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span > .active {margin-top: -1px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:1000px !important;}
+  .map-title-margin{margin-top:175px !important;}
+}
+
+@media (min-width:2301px) and (max-width:2400px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0px 202px;position: relative;top: 7px;left: -200px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 8px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span {margin-top: -1px;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span > .active {margin-top: -1px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:1000px !important;}
+  .map-title-margin{margin-top:175px !important;}
+}
+
+@media (min-width:2201px) and (max-width:2300px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0px 202px;position: relative;top: 7px;left: -200px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 8px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span {margin-top: -1px;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span > .active {margin-top: -1px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:1000px !important;}
+  .map-title-margin{margin-top:165px !important;}
+}
+
+@media (min-width:2101px) and (max-width:2200px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0px 202px;position: relative;top: 7px;left: -200px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 8px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span {margin-top: -1px;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span > .active {margin-top: -1px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:2160px !important;}
+  .map-title-margin{margin-top:175px !important;}
+}
+
+@media (min-width:1801px) and (max-width:2100px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0px 202px;position: relative;top: 7px;left: -200px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 8px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:750px !important;}
+  .map-title-margin{margin-top:175px !important;}
+}
+
+@media (min-width:1650px) and (max-width:1800px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0px 205px;position: relative;top: 0;left: -205px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 15px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:1080px !important;}
+  .map-title-margin{margin-top:175px !important;}
+}
+
+@media (min-width:1500px) and (max-width:1649px){
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0px 208px;position: relative;top: 0;left: -210px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 15px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:1200px !important;}
+  .map-title-margin{margin-top:175px !important;}
+}
+
+@media (min-width:1441px) and (max-width:1499px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0 206px;position: relative;top: 0;left: -210px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {
+    line-height: 1;padding: 15px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+	.map-styles{margin-top:50px !important;}
+	.map-responsive{height:1200px !important;}
+	.map-title-margin{margin-top:175px !important;}
+}
+
+@media (min-width:1430px) and (max-width:1440px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0px 208px;position: relative;top: 0;left: -220px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {
+    line-height: 1;padding: 15px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+	.map-styles{margin-top:50px !important;}
+	.map-responsive{height:900px !important;}
+	.map-title-margin{margin-top:175px !important;}
+}
+
+@media (min-width:1301px) and (max-width:1429px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0px 200px;position: relative;top: 7px;left: -195px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 8px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 180px;margin-top: -2px;margin-right: 83px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:1200px !important;}
+  .map-title-margin{margin-top:175px !important;}
+}
+
+@media (min-width:1201px) and (max-width:1300px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0px 0 0px 206px;position: relative;top: 0;left: -209px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 180px;margin-top: -2px;margin-right: 83px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {
+    line-height: 1;padding: 15px 10px 5px;font-size: 14px;border-width: 4px 0 4px 0;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:900px !important;}
+  .map-title-margin{margin-top:170px !important;}
+}
+
+@media (min-width:1101px) and (max-width:1200px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+    header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0px 0 0px 160px;position: relative;top: 0;left: -140px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 180px;margin-top: 0;margin-right: 83px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:1200px !important;}
+  .map-title-margin{margin-top:165px !important;}
+}
+
+@media (min-width:1025px) and (max-width:1100px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0px 0 0px 160px;position: relative;top: 0;left: -140px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 180px;margin-top: -2px;margin-right: 83px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:600px !important;}
+  .map-title-margin{margin-top:165px !important;}
+}
+
+@media (min-width:1000px) and (max-width:1024px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0 160px;position: relative;top: 4px;left: -128px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 8px 10px 8px;font-size: 14px;border-width: 4px 0 4px 0;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 180px;margin-top: -2px;margin-right: 83px;}
+.map-styles{margin-top:50px !important;}
+.map-responsive{height:450px !important;}
+.map-title-margin{margin-top:165px !important;}
+.map-responsive{height:1200px !important;}
+}
+
+@media (min-width:950px) and (max-width:999px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 2000px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: -5px 0 0 20px;position: relative;top: 2px;left: 1030px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 8px 10px 8px;font-size: 14px;border-width: 4px 0 4px 0;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 125px;margin-top: -2px;margin-right: 83px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li.active > a {background-color: rgb(252, 163, 17);border-top: none;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span {
+    margin-top: 0px;
+  }
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span > .active {
+    margin-top: 8px;
+  }
+	.map-styles{margin-top:50px !important;}
+	.map-responsive{height:1500px !important;}
+	.map-title-margin{margin-top:165px !important;}
+}
+
+@media (min-width:851px) and (max-width:949px) {
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 120px;margin-top:0;margin-right: 83px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:1200px !important;}
+}
+
+@media (min-width:801px) and (max-width:850px) {
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 120px;margin-top:0;margin-right: 83px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:400px !important;}
+  .map-title-margin{margin-top:165px !important;}
+}
+
+@media (min-width:768px) and (max-width:800px) {
+  header #navigation .uc-nav .uc-menuwrapper ul {width: 760px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li {margin: 0 0 0 0;position: relative;top: 8px;left: 0;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a {line-height: 1;padding: 8px 10px 8px;font-size: 14px;border-width: 4px 0 4px 0;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {width: 180px;margin-top:0;margin-right: 83px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo {top: 8px;height: 45px;overflow: hidden;}
+  header #navigation.group .row.uc-logo-container {height: 60px;}
+  header #navigation .uc-nav .uc-menuwrapper ul li > a, header #navigation .uc-nav .uc-menuwrapper ul li > span {padding: 4px 10px;background-color: transparent;margin: 5px 15px 0px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+  header #navigation .uc-nav .uc-menuwrapper ul li.active > a {background-color: rgb(252, 163, 17);border-top: none;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span {margin-top: 0px;}
+  header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > a, header #navigation .uc-nav .uc-menuwrapper ul > li:first-child > span > .active {margin-top: 8px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:800px !important;}
+  .map-title-margin{margin-top:120px !important;}
+}
+
+@media (min-width:740px) and (max-width:767px) {
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 120px;margin-top:0;margin-right: 83px;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:400px !important;}
+  .map-title-margin{margin-top:100px !important;}
+}
+
+@media (min-width:701px) and (max-width:739px) {
+  header #navigation.group .row.uc-nav-container .row.division ul li.group > a {
+    width: 600px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 115px;margin-top: 0px;margin-right: 83px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo {
+    top: 16px;height: 30px;overflow: hidden;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:1200px !important;}
+  .map-title-margin{margin-top:100px !important;}
+}
+
+@media (min-width:650px) and (max-width:700px) {
+  header #navigation.group .row.uc-nav-container .row.division ul li.group > a {
+    width: 600px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 115px;margin-top: 0px;margin-right: 83px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo {
+    top: 16px;height: 30px;overflow: hidden;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:400px !important;}
+}
+
+@media (min-width:516px) and (max-width:649px) {
+  header #navigation.group .row.uc-nav-container .row.division ul li.group > a {
+    width: 600px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 115px;margin-top: 0px;margin-right: 83px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo {
+    top: 16px;height: 30px;overflow: hidden;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:400px !important;}
+}
+
+/********* iPhone 6 Plus **********/
+@media (min-width:401px) and (max-width:515px) {
+  header #navigation.group .row.uc-nav-container .row.division ul li.group > a {
+    width: 600px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 115px;margin-top: 0px;margin-right: 83px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo {
+    top: 16px;height: 30px;overflow: hidden;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:430px !important;}
+  .map-title-margin{margin-top:100px !important;}
+}
+
+/********* iPhone 6  **********/
+@media (min-width:321px) and (max-width:400px) {
+  header #navigation.group .row.uc-nav-container .row.division ul li.group > a {
+    width: 600px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 115px;margin-top: 0px;margin-right: 83px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo {
+    top: 16px;height: 30px;overflow: hidden;}
+  .gm-style {top: 0px !important;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:800px !important;}
+  .map-title-margin{margin-top:100px !important;}
+}
+
+/********* iPhone 5 / Nokia Lumia 520 **********/
+
+@media (min-width:280px) and (max-width:320px) {
+  header #navigation.group .row.uc-nav-container .row.division ul li.group > a {
+    width: 600px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo a, header #navigation.group .row.uc-logo-container .container .uc-logo img, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo a, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo img {
+    width: 115px;margin-top: 0px;margin-right: 83px;}
+  header #navigation.group .row.uc-logo-container .container .uc-logo, header #navigation.group.sub-group .row.uc-logo-container .container .uc-logo {
+    top: 16px;height: 30px;overflow: hidden;}
+  .gm-style {top: 0px !important;}
+  .map-styles{margin-top:50px !important;}
+  .map-responsive{height:600px !important;}
+  .map-title-margin{margin-top:125px !important;}
+}
+
+/**********
+ Support Section For Various Browsers ex Edge, IE, etc
+**************/
+@supports (-ms-ime-align:auto) {
+    .vertical-title{writing-mode: tb-rl; width: auto; height:450px;word-break:normal;overflow-wrap:normal;}
+}
