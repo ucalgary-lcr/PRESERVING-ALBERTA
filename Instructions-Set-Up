@@ -1,0 +1,8 @@
+This was a Wordpress site set-up on Ubuntu 16 using Wordpress 4.9.6.
+
+Download and install Wordpress found here and set-up using default install on server: https://wordpress.org/download/
+
+Replace the wp-content directory with directory found here on GitHub.
+
+Dependencies:
+Toolset Types plugin: https://wordpress.org/plugins/types/
